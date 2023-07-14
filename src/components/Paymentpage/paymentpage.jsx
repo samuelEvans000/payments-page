@@ -11,7 +11,7 @@ import razor from "../../images/razor.png";
 
 const Paymentpage = () => {
   const plans = [
-    { id: 1, name: "12 Months Subscription", price: 99, discount: 0, month: 5 },
+    { id: 1, name: "24 Months Subscription", price: 239, discount: 0, month: 10 },
     {
       id: 2,
       name: "12 Months Subscription",
@@ -134,8 +134,11 @@ const Paymentpage = () => {
               </div>
             </label>
           ))}
+          <div className="total-price">
+            <h3 className="total">Total Price (incl. 18% GST): </h3>
+            <h3 className="totalamt">₹{calculateTotalPrice().toFixed(2)}</h3>
+          </div>
         </div>
-        <h3>Total Price: ₹{calculateTotalPrice().toFixed(2)}</h3>
         <div className="buttons">
           <button className="cancel">CANCEL</button>
           <button className="pay">PROCEED TO PAY</button>
