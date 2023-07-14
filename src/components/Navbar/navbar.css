@@ -1,4 +1,7 @@
+/* Import the Raleway font with different font weights */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap");
+
+/* The navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,17 +9,20 @@
   background-color: #ffffff;
 }
 
+/* The left section of the navbar */
 .navbar-left {
   display: flex;
   align-items: center;
 }
 
+/* The right section of the navbar */
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* The logo within the navbar */
 .navbar-logo {
   border: none;
   background: none;
@@ -37,6 +43,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* The buttons within the navbar */
 .navbar-button {
   border: none;
   background: none;
@@ -46,11 +53,13 @@
   cursor: pointer;
 }
 
+/* Hover effect on buttons within the navbar */
 .navbar-button:hover {
   border: 2px solid #000;
   border-radius: 5px;
 }
 
+/* The "Join Now" button */
 .joinnow {
   border: none;
   padding: 8px 12px;
@@ -61,10 +70,13 @@
   background: linear-gradient(224deg, #0048ff 0%, #0096ff 100%);
   color: #fff;
 }
+
+/* Hover effect on the "Join Now" button */
 .joinnow:hover {
   transform: scale(1.1);
 }
 
+/* The dropdown content container */
 .navbar-dropdown-content {
   display: none;
   position: absolute;
@@ -76,6 +88,7 @@
   border-radius: 5px;
 }
 
+/* The links within the dropdown content */
 .navbar-dropdown-content a {
   color: #333;
   padding: 8px 12px;
@@ -83,15 +96,19 @@
   text-decoration: none;
 }
 
+/* Display the dropdown content when hovering over the navbar dropdown */
 .navbar-dropdown:hover .navbar-dropdown-content {
   display: block;
   border: 1px solid #000;
 }
 
+/* Hover effect on course buttons */
 .course-button:hover {
   background-color: #ccc;
   cursor: pointer;
 }
+
+/* The search icon within the navbar */
 .navbar-search-icon {
   border: none;
   background: none;
@@ -99,11 +116,14 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+/* Hover effect on the search icon */
 .navbar-search-icon:hover {
   border: 2px solid #000;
   border-radius: 55px;
 }
 
+/* The search bar within the navbar */
 .navbar-search-bar {
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -111,6 +131,55 @@
   margin-left: 10px;
 }
 
-.navbar-button {
-  margin-left: 10px;
+/* Add responsive styles below */
+
+/* Adjust the navbar layout for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add some spacing */
+  }
+
+  .navbar-left,
+  .navbar-right {
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .navbar-logo {
+    font-size: 24px; /* Reduce the logo font size */
+  }
+
+  .navbar-button,
+  .joinnow {
+    font-size: 14px; /* Reduce button font size */
+    padding: 6px 10px; /* Adjust button padding */
+  }
+
+  .navbar-dropdown-content {
+    position: static; /* Remove absolute positioning */
+    margin-top: 0; /* Remove margin */
+    box-shadow: none; /* Remove box shadow */
+    border-radius: 0; /* Remove border radius */
+    width: 100%; /* Set width to full */
+    background-color: #fff; /* Set background color */
+  }
+
+  .navbar-dropdown:hover .navbar-dropdown-content {
+    display: none; /* Hide the dropdown content */
+    border: none; /* Remove border */
+  }
+
+  .navbar-search-bar {
+    width: 100%; /* Set width to full */
+  }
+}
+
+/* Add further responsive styles as needed */
+@media (max-width: 576px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+  .navbar{
+    width: 200vw;
+  }
 }

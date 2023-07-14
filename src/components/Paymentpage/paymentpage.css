@@ -8,6 +8,7 @@
   margin-left: 80px;
   font-family: "Raleway", sans-serif;
 }
+
 .offer-text {
   display: flex;
   align-items: center;
@@ -24,17 +25,20 @@
   object-fit: contain;
   margin-right: 40px;
 }
+
 .status {
   display: flex;
   gap: 100px;
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
 .status-check {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .signup,
 .subscribe {
   border: none;
@@ -57,7 +61,7 @@ p {
   display: flex;
   background-color: white;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   margin: 5%;
   border-radius: 10px;
   align-items: center;
@@ -68,6 +72,7 @@ p {
   margin: 18px 15px 0px 0px;
   font-weight: 700;
 }
+
 .month {
   margin: 0px 0px 15px 0px;
   font-size: 8px;
@@ -90,6 +95,7 @@ p {
   transition: background-color 0.3s ease;
   align-items: center;
 }
+
 .plan-card input[type="radio"] {
   margin-right: 10px;
 }
@@ -118,13 +124,13 @@ h6 {
   display: grid;
   gap: 10px;
   margin-bottom: 15px;
-
   grid-template-columns: repeat(2, 1fr);
 }
 
 .buttons img {
   width: 60%;
 }
+
 .cancel {
   padding: 8px 20px;
   font-size: 12px;
@@ -135,6 +141,7 @@ h6 {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .cancel:hover {
   background-color: #f77171;
   color: white;
@@ -186,3 +193,60 @@ input[type="radio"]:checked::before {
 .razor img {
   width: 60%;
 }
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .subscription {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .subscription {
+    width: 100vw;
+    margin: 2%;
+  }
+
+  .plan-container {
+    width: 100%;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .buttons img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content {
+    margin-left: 40px;
+  }
+
+  .icon-text img {
+    width: 30px;
+    margin-right: 20px;
+  }
+  .subscription {
+    width: 100vw;
+    margin: 2%;
+    margin-left: 50px;
+  }
+  .status {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .status-check {
+    justify-content: center;
+  }
+
+  .status-check p {
+    margin-top: 5px;
+  }
+}
+
