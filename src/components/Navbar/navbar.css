@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  border: none;
+  background: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.14px;
+  background: linear-gradient(122deg, #0096ff 42.14%, #0048ff 96.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-button {
+  border: none;
+  background: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.joinnow {
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 52px;
+  background: linear-gradient(224deg, #0048ff 0%, #0096ff 100%);
+  color: #fff;
+}
+.joinnow:hover {
+  transform: scale(1.1);
+}
+
+.navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.navbar-dropdown-content a {
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+  display: block;
+  border: 1px solid #000;
+}
+
+.course-button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.navbar-search-icon {
+  border: none;
+  background: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar-search-icon:hover {
+  border: 2px solid #000;
+  border-radius: 55px;
+}
+
+.navbar-search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.navbar-button {
+  margin-left: 10px;
+}
